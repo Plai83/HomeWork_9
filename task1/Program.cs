@@ -15,7 +15,11 @@ void PrintResult(int M, int N)
     {
         return;
     }
-    if(M%2 ==0) System.Console.Write($"{M}\t");
+        if(M%2 ==0)
+    {
+        System.Console.Write($"{M}");
+        if(M < N - 1) System.Console.Write(",\t");
+    }
     PrintResult(M + 1, N);
 }
 
